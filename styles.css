@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* ✅ fixes section overlap with sticky header */
+}
+
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: black;
+  border: 1px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  flex-wrap: wrap;
+}
+
+.header h1,
+a {
+  color: white;
+}
+
+.header h1:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.list li a:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+/* ===== HERO ===== */
+.herosce {
+  background-color: black;
+  min-height: 100vh;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.herosce p,
+.herosce h1 {
+  color: white;
+  line-height: 1;
+}
+
+.herosce h1 {
+  font-weight: 1000;
+  font-size: 100px;
+}
+
+.hleft a {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hleft a:hover {
+  background-color: white;
+  color: black;
+}
+
+.hleft p {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.hleft {
+  flex: 1 1 500px;
+}
+
+.hright {
+  flex: 1 1 500px;
+  height: auto;
+}
+
+.hright iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/* ===== ABOUT ===== */
+.aboutsec {
+  background-color: black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 50px 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.aleft {
+  flex: 1 1 400px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.aleft img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.aright {
+  flex: 1 1 400px;
+}
+
+.aright p {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* ===== SKILLS ===== */
+.skillssec {
+  background-color: black;
+  min-height: 100vh;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.skills {
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+  top: 150px;
+  padding: 20px;
+}
+
+.skills h3 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 900;
+}
+
+.skills i {
+  color: white;
+}
+
+.skilldown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 150px;
+  padding: 50px 20px;
+}
+
+/* ===== CONTACT ===== */
+.contactsec {
+  background-color: black;
+  min-height: 100vh;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 50px 0;
+}
+
+.contact {
+  max-width: 500px;
+  border: 2px white solid;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 25px;
+  position: relative;
+  top: 50px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  outline: none;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact button {
+  padding: 15px 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.contactsec h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .herosce h1 {
+    font-size: 60px;
+  }
+
+  .hleft a {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .hright iframe {
+    height: 350px;
+  }
+
+  .aright p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .skills h3 {
+    font-size: 35px;
+  }
+
+  .skilldown {
+    font-size: 80px;
+    gap: 20px;
+  }
+
+  .contact {
+    width: 90%;
+    top: 20px;
+    padding: 20px;
+  }
+}
